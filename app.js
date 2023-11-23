@@ -1,15 +1,42 @@
 
+var navLink = document.getElementById("navLink");
+var isOpen = false; // Variable to track the menu state
 
+function showMenu() {
+  if (isOpen) {
+    navLink.style.top = ""; // Set it back to the default value (empty)
+    isOpen = false; // Update the state
+  } else {
+    navLink.style.top = "100px"; // Set the new position when opening
+    isOpen = true; // Update the state
+  }
+}
+
+// Event listener to call the toggleMenu function on click
+navLink.addEventListener("click", showMenu);
+
+
+//javascript for alert
+var alert = document.getElementById("alert");
+function showAlert(){
+alert.style.right = "30px";
+}
+
+var content = document.getElementById("content");
+var isOpen = false;
 
 function show() {
 
-  var content = document.getElementById("content");
-  if(content) {
+  if(isOpen) {
     content.style.position  = "unset"; 
-  console.log("it has been positioned")
-
-  } 
+   isOpen = false
+  } else{
+    content.style.position  = "absolute"; 
+    isOpen = true;;
+  }
 }
+
+content.addEventListener('click', show)
 
 
 //var hero_content = document.getElementById("hero_content");

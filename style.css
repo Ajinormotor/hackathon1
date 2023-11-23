@@ -18,6 +18,7 @@ nav{
     color: white;
     line-height: 45px;
     padding: 10px;
+    position: static;
 }
 
 .logo img{
@@ -91,6 +92,13 @@ nav{
     text-transform: uppercase;
     padding: 4px 2px;
 
+}
+.alert{
+    display: none;
+}
+
+.navLink{
+    display: none;
 }
 
 /*---------NAVBAR SECTION ENDS HERE-------*/
@@ -478,6 +486,7 @@ overflow: hidden;
         border-radius: 5px;
         border: transparent;
         text-align: center;
+        cursor: pointer;
      }
 
      .menu_button{
@@ -496,6 +505,7 @@ overflow: hidden;
          padding: 0;
          display: flex;
          flex-direction: column;
+         flex-direction: column;
          text-align: left;
          justify-content: left;
          align-items: left;
@@ -506,6 +516,61 @@ overflow: hidden;
  
        .hero_ad_col h1{
          font-size: medium;
+       }
+   .side_menu svg{
+    cursor: pointer;
+   }
+       .alert{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        background: #fff;
+        left: 0;
+        top: -700px;
+        transition: 0.4s;
+        color: black;
+        border-radius: 10px;
+        margin: 20px;
+        cursor: pointer;
+       }
+       .navLink{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 500px;
+        background: #fff;
+        position: absolute;
+        top: -600px;
+        right: 0px;
+        z-index: 500;
+        text-align: left;
+        justify-content: left;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.4s;
+       }
+
+       .navlist{
+        color: black;
+        list-style: none;
+       }
+       .navLink_heading{
+        display: flex;
+       }
+
+       .navlist ul li{
+        list-style: none;
+       }
+
+       .firstlist{
+      
+       }
+       .secondlist{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        width: 100%;
        }
  }
  
