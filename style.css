@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f1f1f1;
+    
+}
+
+/*-----------NAVBAR SECTION------*/
+nav{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    line-height: 50px;
+    padding: 10px;
+}
+
+.logo img{
+    width: 130px;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo2{
+    opacity: 0;
+    width: 130px;
+}
+
+
+
+.search_bar{
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid Gray;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+.search_bar img{
+    width: 20px;
+    color: white;
+}
+
+.search_bar input[type="text"]{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 5px;
+    color: Gray;
+    
+}
+
+.side_menu{
+    display: flex;
+    line-height: 40px;
+
+}
+
+.side_menu_col{
+    border: 2px solid gray;
+    height: 40px;
+    width: 200px;
+    display: flex;
+  
+}
+
+.side_menu img{
+    width: 40px;
+    background: gray;
+    color: #fff;
+    border: 2px solid white;
+    margin-right: 20px;
+}
+.side_menu_col h1{
+    text-align: left;
+   width: 100%;
+   font-size: 15px;
+   
+
+}
+.side_menu_col button{
+    background: greenyellow;
+    color: black;
+    text-transform: uppercase;
+    padding: 4px 2px;
+
+}
+
+/*---------NAVBAR SECTION ENDS HERE-------*/
+
+
+/*---------HERO SECTION STARTS HERE-------*/
+
+.heros{
+    top: 50%;
+    margin: 50px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero_ad{
+    background: black;
+    color: white;
+   display: flex;
+   line-height: 50px;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_ad_col a{
+    padding: 10px 6px ;
+    background: #fff;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+.hero_ad_col img{
+    color: white;
+    font-size: 20px;
+}
+
+
+.hero_heading{
+    width: 90%;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+ 
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero_heading_col{
+    padding: 20px;
+}
+
+.hero_heading_col p{
+    padding-top: 20px;
+    display: flex;
+
+   
+}
+
+.status_bar{
+    width: 50px;
+   
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+.status_percent{
+    width: 20px;
+    background: black;
+    border-radius: 5px;
+
+    
+}
+
+.hero_heading_col img{
+    font-size: 40px;
+
+}
+
+
+.hero_content_heading{
+    display: flex;
+}
+
+.show_btn{
+    cursor: pointer;
+}
+
+
+
+/*-----------HERO BODY SECTION------*/
+
+.hero_body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: 0.4s;
+  
+    
+}
+
+.hero_content{
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+#content{
+    position:  absolute;
+    z-index: 2;
+}
+
+
+   
+
+.row{
+    display: flex;
+    padding: 10px;
+}
+
+
+.hero_content-col{
+  padding: 5px;
+  text-align: left;
+  align-items: left;
+  justify-content: left;
+  
+}
+
+
+.hero_content_heading{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+}
+
+.hero_content_heading h1{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.image_container{
+    width: 30px;
+    position: relative;
+}
+
+
+.image_container{
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+overflow: hidden;
+}
+
+.second-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.first-image{
+    transition:0 .4s
+}
+
+.image_container:hover .second-image {
+    opacity: 1;
+  transform: rotate(360deg);
+}
+
+.image_container:hover .first-image{
+    opacity: 0;
+}
+
+.hero_content-col p{
+    padding-bottom: 20px;
+    padding-left: 40px;
+    font-size: 15px;
+    color: gray;
+}
+
+
+.hero_content-col button{
+    margin-left: 35px;
+    width: 130px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.content_btn{
+    background: gray;
+    border-radius: 10px;
+    width:100%;
+    height: 30px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px solid black;
+    cursor: pointer;
+    transition: 0.4s;
+   
+}
+
+
+#hero_shrink{
+    opacity: 0;
+}
+
+#showIcon{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/*-------- MEDIA QUERRY FOR------*/
+@media  (max-width: 450px){
+   body{
+    width: 450px;
+   }
+    nav{
+        width:450px;
+    }
+    .logo2{
+        opacity: 1;
+        width: 130px;
+    }
+
+    .search_bar{
+       width: 250px;
+    }
+    .side_menu_col{
+        width: 50px;
+    }
+    .side_menu_col h1{
+        opacity: 0;
+        
+    }
+
+    .heros{
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 450px;
+    }
+    .hero_ad{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+        width: 100%;
+        border-radius: 0px;
+        width: 450px;
+    }
+
+      .hero_ad_col h1{
+        font-size: medium;
+      }
+}
