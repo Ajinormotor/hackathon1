@@ -332,11 +332,15 @@ overflow: hidden;
    }
 
     nav{
-        width:450px;
-        margin: 0;
-        justify-content: space-around;
-        align-items: left;
+        width:100%;
+        margin: 0px;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
         display: flex;
+        gap: 1rem;
+       left: 0;
+       margin-left: 0;
     }
 
     
@@ -354,40 +358,154 @@ overflow: hidden;
     }
 
     .search_bar{
-       width: 200px;
+       width: 100px;
        padding: 5px;
        margin-top: -12px;
     }
+
+    .side_menu{
+        width: 130px;
+        align-items: center;
+        gap: 0.5rem;
+    }
     .side_menu_col{
-        width: 50px;
+        width: 25px;
+        border: none;
+        gap: 0px;
     }
-    .side_menu img{
-    width: 30px;
+    .side_menu svg{
+    border: none;
+    background: transparent;
+  
     }
+
+  
     .side_menu_col h1{
        display: none;
         
+    }
+    .side_menu_col button{
+       width: 30px;
+       height: 30px;
+       border-radius: 5px;
+       border: transparent;
+       text-align: center;
     }
 
     .heros{
         margin-top: 10px;
         margin-left: 0px;
-        width: 450px;
+        width: 100%;
     }
     .hero_ad{
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
-        text-align: left;
-        justify-content: left;
-        align-items: left;
+        
         width: 100%;
         border-radius: 0px;
-        width: 450px;
+        width: 100%;
     }
 
       .hero_ad_col h1{
         font-size: medium;
       }
 }
+
+/*---------MEDIA QUERY FOR MAX-WIDTH:699PX------*/
+
+
+@media  (max-width: 679px){
+    body{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     scroll-behavior: smooth;
+    height: 10px;
+    }
+ 
+     nav{
+         width:100%;
+         margin: 0;
+         justify-content: space-around;
+         align-items: left;
+         display: flex;
+        gap: 1rem;
+     }
+ 
+     
+     
+     .logo img{
+         width: 60px;
+     }
+ 
+     .logo1{
+         display: none;
+     }
+     .logo2{
+         opacity: 1;
+         width: 100%;
+     }
+ 
+     .search_bar{
+        width:300px;
+        padding: 5px;
+        margin-top: -12px;
+     }
+
+     .side_menu{
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+     .side_menu_col{
+         width: 10px;
+         border: none;
+
+     }
+     .side_menu img{
+      width: 38px;
+      height: 38px;
+     }
+
+     .side_menu_col h1{
+        display: none;
+     }
+     .side_menu_col button{
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: transparent;
+        text-align: center;
+     }
+
+     .menu_button{
+        width: 30px;
+        height: 30px;
+     }
+ 
+     .heros{
+         margin-top: 10px;
+         margin-left: 0px;
+         width: 100%;
+        
+     }
+     .hero_ad{
+         margin: 0;
+         padding: 0;
+         display: flex;
+         flex-direction: column;
+         text-align: left;
+         justify-content: left;
+         align-items: left;
+         width: 100%;
+         border-radius: 0px;
+         width: 100%;
+     }
+ 
+       .hero_ad_col h1{
+         font-size: medium;
+       }
+ }
+ 
