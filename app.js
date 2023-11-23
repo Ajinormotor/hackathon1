@@ -18,8 +18,15 @@ navLink.addEventListener("click", showMenu);
 
 //javascript for alert
 var alert = document.getElementById("alert");
+isOpen = false;
 function showAlert(){
-alert.style.right = "30px";
+  if(isOpen){
+alert.style.top = "100px";
+isOpen = false;
+}else{
+  alert.style.top = "-700px";
+  isOpen = true;
+}
 }
 
 var content = document.getElementById("content");

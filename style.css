@@ -564,13 +564,14 @@ overflow: hidden;
         list-style: none;
        }
 
-       .firstlist{
-      
-       }
+       
        .secondlist{
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         width: 100%;
+       }
+       .contents{
+        display: none;
        }
  }
  
