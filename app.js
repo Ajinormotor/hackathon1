@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 
 function show() {
@@ -11,7 +11,7 @@ function show() {
   } 
 }
 
-=======
+
 //var hero_content = document.getElementById("hero_content");
 
 //hero_content.onclick() => {
@@ -24,4 +24,4 @@ function showIcon() {
         heroContent.style.top = "0px";
     }
 }
->>>>>>> 915e40fdfe815dea4133792d89712b315229e820
+
