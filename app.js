@@ -21,10 +21,10 @@ var alert = document.getElementById("alert");
 isOpen = false;
 function showAlert(){
   if(isOpen){
-alert.style.top = "100px";
+alert.style.display = "block";
 isOpen = false;
 }else{
-  alert.style.top = "-700px";
+  alert.style.display = "none";
   isOpen = true;
 }
 }
@@ -57,5 +57,14 @@ function showIcon() {
     if (heroContent) {
         heroContent.style.top = "0px";
     }
+}
+
+//Click Function for Heading AD
+
+var ad = document.getElementById("ad")
+
+function adIcon(){
+  ad.style.display = "none";
+     console.log('Yes been clicked')
 }
 
