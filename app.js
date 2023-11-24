@@ -19,6 +19,7 @@ navLink.addEventListener("click", showMenu);
 //javascript for alert
 var alert = document.getElementById("alert");
 isOpen = false;
+
 function showAlert(){
   if(isOpen){
 alert.style.display = "block";
@@ -36,14 +37,14 @@ function show() {
 
   if(isOpen) {
     content.style.position  = "unset"; 
-   isOpen = false
+   isOpen = false;
   } else{
     content.style.position  = "absolute"; 
-    isOpen = true;;
+    isOpen = true;
   }
 }
 
-content.addEventListener('click', show)
+content.addEventListener('click', show);
 
 
 //var hero_content = document.getElementById("hero_content");
