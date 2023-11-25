@@ -1,4 +1,3 @@
-
 var navLink = document.getElementById("navLink");
 var isOpen = false; // Variable to track the menu state
 
@@ -44,7 +43,6 @@ function show() {
   }
 }
 
-content.addEventListener('click', show);
 
 
 //var hero_content = document.getElementById("hero_content");
@@ -68,4 +66,3 @@ function adIcon(){
   ad.style.display = "none";
      console.log('Yes been clicked')
 }
-
